@@ -1,0 +1,32 @@
+// ! Logo
+.logo {
+  color: $accent-color;
+  font-family: "Raleway", sans-serif;
+
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  transform: scale(1);
+  transition: transform $timing-animation;
+  @media screen and (max-width: $tablet-max) {
+    font-size: 24px;
+    line-height: 1.14;
+  }
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    outline: transparent;
+  }
+  &__studio-black {
+    color: #000000;
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+      margin-right: 81px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-right: 85px;
+    }
+  }
+  &__studio-white {
+    color: #ffffff;
+  }
+}
