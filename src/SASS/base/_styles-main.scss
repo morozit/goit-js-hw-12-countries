@@ -3,8 +3,10 @@ html {
 }
 
 body {
+  background-image: url(/images/bg-pattern.png);
+
   margin: 0;
-  background: $primary-white;
+  // background: $primary-white;
   color: $text-color;
   font-family: $font-family;
   font-style: normal;

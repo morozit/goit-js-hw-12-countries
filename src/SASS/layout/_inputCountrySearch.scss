@@ -1,31 +1,28 @@
 .container {
-  width: 360px;
+  @extend %container;
+  // width: 360px;
   margin: 0px auto;
   padding: 80px 0;
-  @media screen and (min-width: 768px) {
-    width: 600px;
-  }
-  // @media screen and (min-width: 1200px) {
-  //   width: 1170px;
-  // }
+
   h1 {
     font-family: material, sans-serif;
+    font-size: 48px;
     font-weight: bold;
     text-align: center;
     padding: 10px 0;
-    color: #ffffff;
-    text-shadow: 0 0 15px paleturquoise;
+    color: #000000;
+    // text-shadow: 0 0 15px rgb(179, 179, 179);
 
-    background-color: rgba(84, 109, 250, 0.5);
-    border-image: linear-gradient(
-      to left,
-      rgba(84, 109, 250, 0.5) 10%,
-      paleturquoise 30%,
-      paleturquoise 70%,
-      rgba(84, 109, 250, 0.5) 90%
-    );
-    border-bottom: 10px solid;
-    border-image-slice: 1;
+    //   background-color: rgba(84, 109, 250, 0.5);
+    //   border-image: linear-gradient(
+    //     to left,
+    //     rgba(84, 109, 250, 0.5) 10%,
+    //     paleturquoise 30%,
+    //     paleturquoise 70%,
+    //     rgba(84, 109, 250, 0.5) 90%
+    //   );
+    //   border-bottom: 10px solid;
+    //   border-image-slice: 1;
   }
 }
 .search-form {
@@ -35,28 +32,35 @@
   align-items: center;
 
   padding: 10px 20px;
-  background: paleturquoise;
+  // background: paleturquoise;
 
   &__header {
-    color: rgb(90, 61, 89);
+    color: #964b00ce;
     text-align: center;
     font-size: 15px;
     margin-bottom: 10px;
   }
   &__input {
-    margin-bottom: 10px;
+    // padding: 2px;
+    max-width: 500px;
+    // height: 40px;
+    // font-size: 36px;
+    text-align: center;
+    border-radius: 10px;
+    border-top-color: #ff7300;
+    border-bottom-color: #ff7300;
     outline: none;
-    border: none;
-    border-bottom: 1px solid #717171;
-    border-radius: 4px 4px 0 0;
-    padding: 4px 10px 2px;
-    font-size: 12px;
-    line-height: 1em;
-    color: rgba(54, 32, 32, 1);
-    background-color: rgba(255, 255, 255, 0.6);
-    &:focus {
-      border-bottom: 2px solid rgba(84, 109, 250, 0.5);
-      margin-bottom: 9px;
+    // border: none;
+
+    padding: 10px 20px;
+    font-size: 32px;
+
+    background-color: transparent;
+    // &:focus,
+    &:hover {
+      border-top-color: #33ff00;
+      border-bottom-color: #1eff00;
+      // margin-bottom: 9px;
     }
   }
   &__output {
