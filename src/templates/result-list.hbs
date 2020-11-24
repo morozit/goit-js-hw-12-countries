@@ -1,0 +1,20 @@
+{{#each this}}
+<div
+  style="background:linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url({{flag}}); background-size: contain;">
+  <h3 class=result__country-name>{{ name }}</h3>
+  <div class="result__country-info">
+    <div class="result__country-facts">
+      <span class="result__capital"><b>Capital: </b> {{ capital }}</span>
+      <span class="result__population"><b>Population: </b> {{ population }}</span>
+      <b>Languages: </b>
+      <ul class="result__languages">
+        {{#each this.languages}}
+        <li class="result__languages-item">{{name}}</li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="result__country-flag" style="background-image: url({{flag}})">
+    </div>
+  </div>
+</div>
+{{/each}}

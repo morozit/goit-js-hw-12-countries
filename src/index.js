@@ -1,2 +1,4 @@
 import './SASS/main.scss';
-import './JS/change-color.js';
+
+import './js/pnotify';
+import './js/search-country';
